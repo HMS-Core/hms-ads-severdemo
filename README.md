@@ -22,8 +22,9 @@ The Java version is 1.7.0 or later.
 ## Configuration 
 To use functions provided by Ads Kit restful API, you need to set related parameters in the request.
     
-access token:  the request token for the request£¬it can be obtained from the Developers Web.
-requestUrl:    URL for accessing Ads Kit, please refer to the restful API References.
+**access token**: the request token for the request, it can be obtained from the Developers Web.
+
+**requestUrl**: URL for accessing Ads Kit, please refer to the restful API References.
 	
 ## Sample Code
 The following describes methods to invoke a restful API.
