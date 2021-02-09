@@ -1,5 +1,5 @@
 # HMS Ads Kit Java Severdemo
-English | [中文](https://github.com/HMS-Core/hms-ads-severdemo/edit/master/README_ZH.md)
+English | [中文](https://github.com/HMS-Core/hms-ads-severdemo)
 ## Table of Contents
 
  * [Introduction](#introduction)
