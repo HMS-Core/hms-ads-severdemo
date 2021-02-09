@@ -1,5 +1,5 @@
 # HMS Ads Kit Java Severdemo
-
+English | [中文](https://github.com/HMS-Core/hms-ads-severdemo/edit/master/README_ZH.md)
 ## Table of Contents
 
  * [Introduction](#introduction)
@@ -15,16 +15,16 @@ Java sample demonstrates how to use Java code to invoke the restful API of the A
 
 ## Installation
 Before using Java sample code, check whether the Java environment has been installed. 
-    
-## Supported Environments
-The Java version is 1.7.0 or later.
-    
+   
 ## Configuration 
 To use functions provided by Ads Kit restful API, you need to set related parameters in the request.
     
 **access token**: the request token for the request, it can be obtained from the Developers Web.
 
 **requestUrl**: URL for accessing Ads Kit, please refer to the restful API References.
+
+## Supported Environments
+The Java version is 1.7.0 or later.
 	
 ## Sample Code
 The following describes methods to invoke a restful API.
@@ -34,7 +34,7 @@ You need to assign a value to the request body based on the corresponding format
 
 ## Question or issues
 If you want to evaluate more about HMS Core,
-[r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
+[HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
 
 If you have questions about how to use HMS samples, try the following options:
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services) is the best place for any programming questions. Be sure to tag your question with 
