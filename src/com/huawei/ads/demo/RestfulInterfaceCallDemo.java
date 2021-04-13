@@ -34,7 +34,7 @@ public class RestfulInterfaceCallDemo {
     /**
      * OAuth鉴权网关地址
      */
-    private static String tokenUrl = "https://login.cloud.huawei.com/oauth2/v2/token";
+    private static String tokenUrl = "https://login.cloud.huawei.com/oauth2/v3/token";
     /**
      * 联盟用户界面生成的OAuth2.0 客户端id 跟密钥
      */
