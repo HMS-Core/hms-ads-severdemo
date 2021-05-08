@@ -32,16 +32,16 @@ import java.util.Map;
 
 public class RestfulInterfaceCallDemo {
     /**
-     * OAuth鉴权网关地址
+     * Gateway address for OAuth authentication
      */
     private static String tokenUrl = "https://login.cloud.huawei.com/oauth2/v3/token";
     /**
-     * 联盟用户界面生成的OAuth2.0 客户端id 跟密钥
+     * OAuth2.0 client ID and key generated on HUAWEI Developers
      */
     private static String clientId = "102422523";
     private static String secret = "a2c95f25bc421a3fd0f77d2118743d925c68fd189675ad6a4a7980a45125e705";
     /**
-     * 调用数据的网关
+     * Gateway for invoking data
      */
     private static String reportUrl = "https://ads.cloud.huawei.com/openapi/monetization/reports/v1/publisher";
 
@@ -51,18 +51,18 @@ public class RestfulInterfaceCallDemo {
     }
 
     /**
-     * 获取token信息
+     * Obtain token information
      *
-     * @return 返回token值
-     * @throws IOException 异常
+     * @return Return the token value
+     * @throws Throw the IOException exception
      */
     private static String getOauthToken() throws IOException {
-        // 设置报文头 Content-Type
+        // Set Content-Type in the packet header
         PostMethod postMethod = new PostMethod(tokenUrl);
         postMethod.setRequestHeader("Content-Type",
                 "application/x-www-form-urlencoded;charset=utf-8");
 
-        // 设置报文body
+        // Set the packet body
         List<NameValuePair> param = new ArrayList<>();
         param.add(new NameValuePair("grant_type", "client_credentials"));
         param.add(new NameValuePair("client_id", clientId));
@@ -83,17 +83,17 @@ public class RestfulInterfaceCallDemo {
     }
 
     /**
-     * 调用报表查询接口
-     * @param accessToken 根据clientId 和密钥获取的token
+     * Call the Publisher Service Reporting API
+     * @param accessToken Token obtained based on the client ID and key
      * @throws IOException
      */
     private static void callApiUseToken(String accessToken) throws IOException {
-        // 设置报文头 Content-Type， Authorization
+        // Set the packet header.Content-Type， Authorization
         PostMethod postMethod = new PostMethod(reportUrl);
         postMethod.setRequestHeader("Content-Type","application/json;charset=utf-8");
         postMethod.setRequestHeader("Authorization","Bearer " + accessToken);
 
-        // 设置报文body
+        // Set the packet body
         Map<String, Object> bodyMap = new HashMap<>();
         Map<String, String> filterMap = new HashMap<>(16);
         filterMap.put("currency", "CNY");
