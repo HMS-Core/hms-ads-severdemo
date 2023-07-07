@@ -38,8 +38,8 @@ public class RestfulInterfaceCallDemo {
     /**
      * OAuth2.0 client ID and key generated on HUAWEI Developers
      */
-    private static String clientId = "102422523";
-    private static String secret = "a2c95f25bc421a3fd0f77d2118743d925c68fd189675ad6a4a7980a45125e705";
+    private static String clientId = "1024****"; // YOUR ID
+    private static String secret = "a2c9***"; // YOUR KEY
     /**
      * Gateway for invoking data
      */
